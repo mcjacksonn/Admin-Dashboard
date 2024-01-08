@@ -40,13 +40,19 @@ body {
 .user-info {
   display: flex;
   align-items: center;
+  padding-right: 40px;
 }
 
 .user-name {
   margin-left: 10px; /* Spacing between icon and text */
+  letter-spacing: normal;
+  font-weight: bold;
+  margin-left: 10px;
 }
 
-
+.logo-circle {
+  margin-left: 10px; /* Increase the left margin as needed */
+}
 
 .search-container .mdi.mdi-magnify {
   font-size: 23px;
@@ -77,11 +83,6 @@ body {
   font-size: 24px;
   margin-right: 10px;
   cursor: pointer;
-}
-
-.user-name {
-  font-weight: bold;
-  margin-left: 10px;
 }
 
 .logo-circle {
