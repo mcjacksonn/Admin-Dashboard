@@ -14,7 +14,7 @@ body {
   top: 0;
   left: 300px;
   z-index: 1000;
-  min-height: 120px;
+  min-height: 140px;
 }
 
 .top-container {
@@ -221,4 +221,6 @@ body {
     padding-top: 20px;
   }
 }
+
+
 
