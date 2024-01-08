@@ -12,26 +12,31 @@
   </head>
   <body>
     <header class="top-bar">
-      <div class="top-container">
-        <!-- Search Container -->
+      <!-- Top Row -->
+      <div class="top-row">
         <div class="search-container">
           <i class="mdi mdi-magnify" aria-label="Search"></i>
           <input type="text" class="search-input" />
         </div>
 
-        <div class="right-container">
+        <div class="user-info">
           <i class="mdi mdi-bell-ring" aria-label="Notifications"></i>
           <div class="logo-circle"></div>
           <span class="user-name">Markee Jackson</span>
         </div>
-      </div>    
       </div>
 
-      <div class="greeting-container">
-        <div class="logo-circle"></div>
-        <div>
-          <span class="greeting-hi">Hi there,</span>
-          <span class="greeting-name">Markee Jackson (@MarkeeJackson)</span>
+      <!-- Bottom Row -->
+      <div class="bottom-row">
+        <div class="greeting-container">
+          <div class="logo-circle"></div>
+          <span class="greeting-text">Hi Markee Jackson</span>
+        </div>
+
+        <div class="button-row">
+          <button class="header-button" id="newButton">New</button>
+          <button class="header-button" id="uploadButton">Upload</button>
+          <button class="header-button" id="shareButton">Share</button>
         </div>
       </div>
     </header>
