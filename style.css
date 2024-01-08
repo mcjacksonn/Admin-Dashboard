@@ -46,6 +46,14 @@ body {
   margin-left: 10px; /* Spacing between icon and text */
 }
 
+
+
+.search-container .mdi.mdi-magnify {
+  font-size: 23px;
+  margin-left: 25px; /* Adjust this value as needed */
+  margin-right: 5px;
+}
+
 .search-input {
   padding: 5px 10px;
   border: 2px solid #ddd;
@@ -53,7 +61,7 @@ body {
   outline: none;
   width: 50%;
   transition: border-color 0.3s;
-  max-width: 350px;
+  max-width: 440px;
 }
 
 .search-input:focus {
@@ -213,8 +221,3 @@ body {
   }
 }
 
-
-.header-btn:hover {
-  background-color: #45a049; /* Darker shade for hover effect */
-  z-index: 10;
-}
