@@ -235,35 +235,28 @@ body {
   display: flex;
   align-items: center;
   position: relative; /* This enables absolute positioning within the container */
+  justify-content: space-between;
 }
 
 .header-buttons {
-  margin-left: 20px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px; /* Position the buttons at the bottom of the .top-bar */
   display: flex;
-  flex-direction: column; /* Stack the buttons vertically */
-  align-items: flex-end; /* Align the buttons to the right */
-  position: absolute; /* Position the buttons absolutely within the top-bar */
-  top: 50px; /* Adjust this value so the buttons align under the right-container */
-  right: 10px; /* Adjust this value based on your layout */
 }
 
 .header-btn {
-  background-color: #f47321; /* The shade of orange from your sidebar */
-  color: white;
+  background-color: #f47321; /* Example background color */
+  color: white; /* Text color */
   border: none;
-  border-radius: 4px;
-  padding: 10px 20px; /* Adjust padding to your preference */
-  margin-bottom: 5px; /* Space between buttons */
-  margin-right: 8px; /* Space between buttons */
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-left: 10px; /* Space between buttons */
   cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.header-btn:last-child {
-  margin-right: 0; /* No margin for the last button */
+  transition: background-color 0.2s;
 }
 
 .header-btn:hover {
-  background-color: #cc6329; /* A darker shade of orange for hover effect */
+  background-color: #45a049; /* Darker shade for hover effect */
+  z-index: 10;
 }
