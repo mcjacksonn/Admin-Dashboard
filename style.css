@@ -107,6 +107,8 @@ body {
 .greeting-container {
   display: flex;
   align-items: center;
+  margin-top: 22px;
+  margin-left: 30px;
 }
 
 .greeting-container .logo-circle {
@@ -122,6 +124,21 @@ body {
 .greeting-text {
   font-size: 16px;
   font-weight: bold;
+}
+
+.greeting-hi {
+  display: block; /* Places "Hi there," on its own line */
+  font-size: 13px; /* Smaller font size for "Hi there," */
+  font-weight: bold; /* Optional: if you want the name to be bold */
+  margin-bottom: 5px;
+  /* Other styling as needed */
+}
+
+.greeting-name {
+  display: block; /* Places "Markee Jackson (@MarkeeJackson)" on a new line */
+  font-size: 18px; /* Larger font size for the name */
+  font-weight: bold; /* Optional: if you want the name to be bold */
+  /* Other styling as needed */
 }
 
 .button-row {
