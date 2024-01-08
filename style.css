@@ -5,7 +5,6 @@ body {
 }
 
 .top-bar {
-  /* Adjust properties for the top-bar to accommodate new structure */
   flex-direction: column;
   width: calc(100% - 300px);
   background-color: #f4f4f4;
@@ -15,9 +14,7 @@ body {
   top: 0;
   left: 300px;
   z-index: 1000;
-  padding-bottom: 20px;
   min-height: 120px;
-  padding-bottom: 20px;
 }
 
 .top-container {
@@ -25,18 +22,70 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-bottom: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.search-input {
+  padding: 5px 10px;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  width: 50%;
+  transition: border-color 0.3s;
+  max-width: 350px;
+}
+
+.search-input:focus {
+  border-color: #f47321;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+}
+
+.mdi-bell-ring {
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.logo-circle {
+  width: 40px;
+  height: 40px;
+  background-image: url("Images/dog.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Adjustments for the bottom row */
+.bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px; /* Space between top and bottom rows */
 }
 
 .greeting-container {
   display: flex;
   align-items: center;
-  margin-top: 20px;
 }
 
 .greeting-container .logo-circle {
-  /* Adjustments if necessary */
-  width: 50px; /* Bigger size for visibility */
+  width: 50px;
   height: 50px;
   background-image: url("Images/dog.png");
   background-size: cover;
@@ -45,67 +94,28 @@ body {
   margin-right: 10px;
 }
 
-.greeting-hi {
-  font-size: 14px; /* Smaller font size for 'Hi there,' */
-  display: block; /* Ensures the name starts on a new line */
-  margin: 0;
-}
-
-.greeting-name {
-  font-size: 20px; /* Larger font size for the name */
-  font-weight: bold;
-  display: inline; /* Keeps 'Hi there,' and the name on the same line */
-  margin: 0;
-}
-
-.greeting-container .greeting {
-  font-weight: normal;
+.greeting-text {
   font-size: 16px;
-}
-
-.right-container,
-.search-container {
-  display: flex;
-  align-items: center;
-  min-width: 250px;
-}
-
-.mdi-bell-ring,
-.search-container .mdi {
-  font-size: 24px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.logo-circle {
-  width: 40px; /* Adjust size as needed */
-  height: 40px;
-  background-image: url("Images/dog.png"); /* Path to your image */
-  background-size: cover; /* Cover the entire area of the circle */
-  background-position: center; /* Center the image in the circle */
-  border-radius: 50%; /* Makes it circular */
-  margin-right: 10px;
-}
-
-.user-name {
   font-weight: bold;
+}
+
+.button-row {
+  display: flex;
+}
+
+.header-button {
+  background-color: #f47321;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-left: 10px;
   cursor: pointer;
-  flex-shrink: 0; /* Prevents the element from shrinking */
-  /* Add additional padding or margin if needed, example: */
-  margin-left: 10px; /* Adjust this value as needed */
+  transition: background-color 0.2s;
 }
 
-.search-input {
-  padding: 5px 10px;
-  border: 2px solid #ddd;
-  border-radius: 20px; /* Increased to create an oval shape */
-  outline: none;
-  width: 100%; /* Full width within container */
-  transition: border-color 0.3s;
-}
-
-.search-input:focus {
-  border-color: #f47321;
+.header-button:hover {
+  background-color: #45a049;
 }
 
 .sidebar {
@@ -163,57 +173,13 @@ body {
   text-decoration: underline;
 }
 
-.greeting-container {
-  display: flex;
-  align-items: center;
-  margin-top: 10px; /* Adjust as needed */
-}
-
-.greeting-container .logo-circle {
-  width: 60px;
-  height: 60px;
-  background-image: url("Images/dog.png");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.greeting-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* This will vertically center the text next to the logo */
-  height: 50px; /* Match the height to your logo-circle for proper alignment */
-}
-
-.greeting-container .greeting-hi,
-.greeting-container .greeting-name {
-  display: block; /* Makes them stack vertically */
-}
-
-.greeting-hi {
-  font-size: 14px; /* Smaller font size for 'Hi there,' */
-  margin: 0; /* Remove any default margins */
-}
-
-.greeting-name {
-  font-size: 20px; /* Larger font size for the name */
-  font-weight: bold;
-  margin: 0; /* Remove any default margins */
-}
-
-.greeting-container .greeting {
-  font-weight: bold;
-  font-size: 16px; /* Adjust size as needed */
-}
-
 .main-content {
   flex-grow: 1;
-  padding-left: 320px; /* Offset for sidebar */
-  padding-top: 60px; /* Offset for top bar */
+  padding-left: 320px;
+  padding-top: 130px; /* Adjusted to accommodate the fixed top-bar */
 }
 
-/* Responsive design */
+/* Responsive design adjustments */
 @media (max-width: 768px) {
   .top-bar {
     left: 0;
@@ -231,30 +197,6 @@ body {
   }
 }
 
-.right-container {
-  display: flex;
-  align-items: center;
-  position: relative; /* This enables absolute positioning within the container */
-  justify-content: space-between;
-}
-
-.header-buttons {
-  position: absolute;
-  right: 10px;
-  bottom: 10px; /* Position the buttons at the bottom of the .top-bar */
-  display: flex;
-}
-
-.header-btn {
-  background-color: #f47321; /* Example background color */
-  color: white; /* Text color */
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  margin-left: 10px; /* Space between buttons */
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
 
 .header-btn:hover {
   background-color: #45a049; /* Darker shade for hover effect */
