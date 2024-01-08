@@ -24,10 +24,26 @@ body {
   width: 100%;
 }
 
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .search-container {
   display: flex;
   align-items: center;
   flex-grow: 1;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-name {
+  margin-left: 10px; /* Spacing between icon and text */
 }
 
 .search-input {
