@@ -149,11 +149,16 @@ body {
   background-color: #f47321;
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  margin-left: 10px;
+  border-radius: 30px; /* Increased to create a more oval shape */
+  padding: 12px 30px; /* Adjust padding to control the sharpness */
+  margin-right: 20px; /* Add right margin if you want space between buttons */
+  margin-top: 30px;
   cursor: pointer;
   transition: background-color 0.2s;
+  /* Add these properties to make the text inside the buttons less sharp */
+  font-weight: normal;
+  text-shadow: none;
+  font-size: 14px;
 }
 
 .header-button:hover {
