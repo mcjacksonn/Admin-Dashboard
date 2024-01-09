@@ -112,8 +112,8 @@ body {
 }
 
 .greeting-container .logo-circle {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   background-image: url("Images/dog.png");
   background-size: cover;
   background-position: center;
@@ -136,7 +136,7 @@ body {
 
 .greeting-name {
   display: block; /* Places "Markee Jackson (@MarkeeJackson)" on a new line */
-  font-size: 18px; /* Larger font size for the name */
+  font-size: 25px; /* Larger font size for the name */
   font-weight: bold; /* Optional: if you want the name to be bold */
   /* Other styling as needed */
 }
@@ -238,6 +238,7 @@ body {
     padding-top: 20px;
   }
 }
+
 
 
 
