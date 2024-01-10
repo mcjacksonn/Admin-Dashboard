@@ -7,7 +7,7 @@ body {
 .top-bar {
   flex-direction: column;
   width: calc(100% - 300px);
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   padding: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -70,6 +70,7 @@ body {
   width: 65%;
   transition: border-color 0.3s;
   max-width: 660px;
+  background-color: #e8e8e8; /* Gray background */
 }
 
 .search-input:focus {
@@ -245,6 +246,45 @@ body {
     padding-top: 20px;
   }
 }
+
+.body-section h2 {
+  font-size: 24px; /* Choose a size that fits your design */
+  color: #333; /* Choose a color that fits your design */
+  margin-bottom: 20px; /* Spacing between the title and the cards */
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows the cards to wrap to the next line */
+  gap: 20px; /* Spacing between the cards */
+  justify-content: flex-start; /* Aligns cards to the start of the container */
+}
+
+.project-card {
+  flex: 0 1 calc(33.333% - 20px); /* Each card takes up a third of the container width minus the gap */
+  height: 200px; /* Fixed height, but you can make it responsive as well */
+  background-color: #e0e0e0; /* Placeholder color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px; /* Optional for rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional for a subtle shadow */
+  /* Add any additional styling you want for the cards */
+}
+
+/* If you want to add responsiveness to the cards for smaller screens */
+@media (max-width: 1024px) {
+  .project-card {
+    flex: 0 1 calc(50% - 20px); /* Each card takes up half of the container width minus the gap */
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex: 0 1 100%; /* Each card takes up the full width */
+  }
+}
+
 
 
 
