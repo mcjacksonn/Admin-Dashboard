@@ -269,6 +269,7 @@ body {
   border-radius: 8px; /* Optional for rounded corners */
   margin-bottom: 20px; /* Space below each card */
   overflow: hidden; /* Ensures the stripe doesn't go outside the card's rounded corners */
+  padding: 16px;
 }
 
 .project-card::before {
@@ -279,6 +280,24 @@ body {
   width: 10px; /* Width of the orange stripe */
   height: 100%; /* Stripe height to cover the card height */
   background-color: #f47321; /* Orange background for the stripe */
+}
+
+.card-icons {
+  /* Style the container of the icons */
+  position: absolute; /* Position the icons container absolutely within the card */
+  bottom: 16px; /* Spacing from the bottom of the card */
+  right: 16px; /* Spacing from the right of the card */
+  display: flex;
+  gap: 8px; /* Spacing between icons */
+}
+
+.mdi {
+  font-size: 24px; /* Adjust icon size as needed */
+  /* color: #333; Icon color */
+}
+
+.mdi:hover {
+  color: #f47321; /* Change color on hover, if desired */
 }
 
 /* If you want to add responsiveness to the cards for smaller screens */
@@ -293,6 +312,7 @@ body {
     flex: 0 1 100%; /* Each card takes up the full width */
   }
 }
+
 
 
 
