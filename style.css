@@ -261,15 +261,24 @@ body {
 }
 
 .project-card {
-  flex: 0 1 calc(33.333% - 20px); /* Each card takes up a third of the container width minus the gap */
-  height: 200px; /* Fixed height, but you can make it responsive as well */
-  background-color: #e0e0e0; /* Placeholder color */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  flex: 0 1 calc(33.333% - 20px); /* Adjust the width of the cards */
+  height: 200px; /* Fixed height for the cards */
+  background-color: #ffffff; /* White background for the rest of the card */
+  position: relative; /* Position relative to allow absolute positioning of the stripe */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gray shadow underneath the card */
   border-radius: 8px; /* Optional for rounded corners */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional for a subtle shadow */
-  /* Add any additional styling you want for the cards */
+  margin-bottom: 20px; /* Space below each card */
+  overflow: hidden; /* Ensures the stripe doesn't go outside the card's rounded corners */
+}
+
+.project-card::before {
+  content: ""; /* Pseudo-element content should be empty */
+  position: absolute; /* Absolute position relative to the card */
+  top: 0; /* Align to the top of the card */
+  left: 0; /* Align to the left of the card */
+  width: 10px; /* Width of the orange stripe */
+  height: 100%; /* Stripe height to cover the card height */
+  background-color: #f47321; /* Orange background for the stripe */
 }
 
 /* If you want to add responsiveness to the cards for smaller screens */
@@ -284,6 +293,7 @@ body {
     flex: 0 1 100%; /* Each card takes up the full width */
   }
 }
+
 
 
 
