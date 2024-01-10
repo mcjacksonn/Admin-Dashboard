@@ -8,13 +8,13 @@ body {
   flex-direction: column;
   width: calc(100% - 300px);
   background-color: #ffffff;
-  padding: 10px;
+  padding: 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   left: 300px;
   z-index: 1000;
-  min-height: 140px;
+  min-height: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adjust the values as needed */
 }
 
