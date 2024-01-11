@@ -229,6 +229,7 @@ body {
   padding-top: 170px; /* Adjusted to accommodate the fixed top-bar */
   display: flex;
   justify-content: space-between;
+  background-color: #f4dd21;
 }
 
 /* Responsive design adjustments */
@@ -250,9 +251,10 @@ body {
 }
 
 .body-section h2 {
-  font-size: 24px; /* Choose a size that fits your design */
+  font-size: 18px; /* Choose a size that fits your design */
   color: #333; /* Choose a color that fits your design */
-  margin-bottom: 20px; /* Spacing between the title and the cards */
+  margin-bottom: 10px; /* Spacing between the title and the cards */
+  font-weight: bold;
 }
 
 .projects-container {
@@ -328,7 +330,7 @@ body {
   max-width: 300px; /* Adjust width as needed */
   padding: 16px;
   margin-left: 20px; /* Spacing between the sections */
-  background-color: #ffffff; /* Or any color that fits your design */
+  background-color: #f4dd21; /* Or any color that fits your design */
 }
 
 .announcement-card {
@@ -351,13 +353,6 @@ hr {
   height: 1px;
   background-color: #e0e0e0; /* Color for the horizontal line */
   margin: 16px 0; /* Spacing around the horizontal line */
-}
-
-.body-section h2 {
-  margin-bottom: 10px; /* Reduced bottom margin, adjust as needed */
-  /* Other existing styles for h2 */
-  font-weight: normal; /* Unbold the text */
-  font-size: 18px; /* Shrink the font size, adjust as needed */
 }
 
 .project-card h3 {
