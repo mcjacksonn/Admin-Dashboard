@@ -337,6 +337,7 @@ body {
   border: 1px solid #e0e0e0; /* Border encompassing all sections */
   border-radius: 8px; /* Optional rounded corners */
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1); /* Gray shadow on the right and bottom */
+  background-color: #ffffff;
 }
 
 .announcement-item {
@@ -385,6 +386,7 @@ hr {
   font-size: 17px;
   margin-top: 5px;
 }
+
 
 
 
