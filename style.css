@@ -352,6 +352,20 @@ hr {
   margin: 16px 0; /* Spacing around the horizontal line */
 }
 
+.project-card h3 {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: #333; /* Adjust the color as needed */
+  margin: 10px 0; /* Adjust top and bottom margin as needed */
+  /* Additional styling as needed */
+}
+
+.project-card p {
+  font-size: 14px; /* Adjust the font size as needed */
+  color: #555; /* Adjust the color as needed */
+  /* Additional styling as needed */
+}
+
+
 
 
 
