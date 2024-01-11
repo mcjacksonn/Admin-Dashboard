@@ -264,7 +264,7 @@ body {
 }
 
 .project-card {
-  flex: 0 1 300px; /* Adjust the width of the cards */
+  flex: 0 1 350px; /* Adjust the width of the cards */
   height: 200px; /* Fixed height for the cards */
   background-color: #ffffff; /* White background for the rest of the card */
   position: relative; /* Position relative to allow absolute positioning of the stripe */
@@ -372,6 +372,23 @@ hr {
   font-size: 14px; /* Adjust the font size as needed */
   color: #555; /* Adjust the color as needed */
   /* Additional styling as needed */
+}
+
+.project-card h3,
+.project-card p {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.project-card p {
+  color: #808080; /* Gray color, adjust the shade as needed */
+  font-size: 17px;
+  margin-top: 5px;
 }
 
 
