@@ -226,7 +226,7 @@ body {
 .main-content {
   flex-grow: 1;
   padding-left: 320px;
-  padding-top: 130px; /* Adjusted to accommodate the fixed top-bar */
+  padding-top: 170px; /* Adjusted to accommodate the fixed top-bar */
   display: flex;
   justify-content: space-between;
 }
@@ -263,7 +263,7 @@ body {
 }
 
 .project-card {
-  flex: 0 1 calc(33.333% - 20px); /* Adjust the width of the cards */
+  flex: 0 1 300px; /* Adjust the width of the cards */
   height: 200px; /* Fixed height for the cards */
   background-color: #ffffff; /* White background for the rest of the card */
   position: relative; /* Position relative to allow absolute positioning of the stripe */
@@ -352,11 +352,19 @@ hr {
   margin: 16px 0; /* Spacing around the horizontal line */
 }
 
+.body-section h2 {
+  margin-bottom: 10px; /* Reduced bottom margin, adjust as needed */
+  /* Other existing styles for h2 */
+  font-weight: normal; /* Unbold the text */
+  font-size: 18px; /* Shrink the font size, adjust as needed */
+}
+
 .project-card h3 {
   font-size: 16px; /* Adjust the font size as needed */
   color: #333; /* Adjust the color as needed */
   margin: 10px 0; /* Adjust top and bottom margin as needed */
   /* Additional styling as needed */
+  font-weight: bold;
 }
 
 .project-card p {
@@ -364,7 +372,6 @@ hr {
   color: #555; /* Adjust the color as needed */
   /* Additional styling as needed */
 }
-
 
 
 
